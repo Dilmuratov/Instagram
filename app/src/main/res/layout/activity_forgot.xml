@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_forgot"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/tv_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find your account"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/playfire"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id ="@+id/tv_annotation"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:text ="Enter your username, email or mobile phone."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf ="@id/tv_find"
+        app:layout_constraintTop_toBottomOf ="@id/tv_find"
+        android:layout_marginTop ="8dp"
+        android:fontFamily ="@font/playfire"
+        />
+
+    <TextView
+        android:id="@+id/tv_needforhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:text="Need for help?"
+        android:fontFamily="@font/playfire"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="@id/tv_annotation"
+        app:layout_constraintTop_toBottomOf="@id/tv_annotation"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username, email or mobile phone"
+        android:textColorHint="@color/black"
+        android:layout_margin="8dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_needforhelp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_searchaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextField"
+        android:layout_margin="8dp"
+        android:text="Search account"
+        android:fontFamily="@font/playfire"
+        android:textAllCaps="false"
+        android:background="#0000FF"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_meta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Meta"
+            android:textColor="#020EFB"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_meta"
+            tools:ignore="MissingConstraints"
+            />
+
+        <ImageView
+            android:id="@+id/iv_meta"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/meta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_meta"
+            app:layout_constraintBottom_toBottomOf="@id/tv_meta"
+            app:layout_constraintEnd_toStartOf="@id/tv_meta"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

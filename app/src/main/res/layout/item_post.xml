@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/messi_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="leomessi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/profile"
+        app:layout_constraintTop_toTopOf="@id/profile" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid partnership"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/profile"
+        app:layout_constraintStart_toStartOf="@id/login" />
+
+    <ImageView
+        android:id="@+id/official"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="6dp"
+        android:src="@drawable/official"
+        app:layout_constraintBottom_toBottomOf="@id/login"
+        app:layout_constraintStart_toEndOf="@id/login"
+        app:layout_constraintTop_toTopOf="@id/login" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="@id/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile" />
+
+    <ImageView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/messi_ronaldo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/comments"
+        app:layout_constraintStart_toEndOf="@id/iv_like"
+        app:layout_constraintTop_toTopOf="@id/iv_like"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_send"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/send"
+        app:layout_constraintTop_toTopOf="@id/iv_like"
+        app:layout_constraintStart_toEndOf="@id/iv_comment"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liked by "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/iv_like"
+        app:layout_constraintTop_toBottomOf="@id/iv_like"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_part2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cristiano "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_part1"
+        app:layout_constraintTop_toTopOf="@id/tv_part1"/>
+
+    <TextView
+        android:id="@+id/tv_part3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tv_part2"
+        app:layout_constraintTop_toTopOf="@id/tv_part2"/>
+
+    <TextView
+        android:id="@+id/tv_part4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32 747 884 others"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_part3"
+        app:layout_constraintTop_toTopOf="@id/tv_part3"/>
+
+    <ImageView
+        android:id="@+id/iv_saved"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/saved"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/post"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_part1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="leomessi "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chess with my best Opponent... more"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/tv_comment1"
+        app:layout_constraintStart_toEndOf="@id/tv_comment1"/>
+
+    <TextView
+        android:id="@+id/tv_viewallcomments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all 15 756 946 commmets"
+        app:layout_constraintStart_toStartOf="@id/tv_comment1"
+        app:layout_constraintTop_toBottomOf="@id/tv_comment1"/>
+
+    <TextView
+        android:id="@+id/tv_comment_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="damir240503 "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_viewallcomments"
+        app:layout_constraintStart_toStartOf="@id/tv_viewallcomments"/>
+
+    <TextView
+        android:id="@+id/tv_commentoflogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kim utti?"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tv_comment_login"
+        app:layout_constraintTop_toTopOf="@id/tv_comment_login"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
